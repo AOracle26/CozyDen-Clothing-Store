@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<title></title>
+<style type="text/css"> 
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('Newly.jpg');
+    color: whitesmoke;
+
+}
+
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.responsive {
+  width: 300%;
+  max-width: 400px;
+  height: auto;
+  position: justify;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+      background-color: #555;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1em;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      position: relative;
+
+        }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #555;
+    }
+
+    nav li:hover > ul {
+      display: inherit;
+    }
+
+    nav ul ul li {
+      width: 100%;
+      text-align: center;
+    }
+     section {
+      padding: 1em;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .slideshow {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .slideshow img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+   height:5%;
+    bottom: 0;
+    width: 100%;
+}</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-commerce Website</title>
+    <style>
+        /* Add your advanced CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        /* ... Additional styling for header, footer, and other sections ... */
+    </style>
+    <script type="text/javascript">let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}</script>
+</head>
+<body>
+    <header>
+        <!-- Add your navigation menu here -->
+        <nav>
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                <a>Products/Services</a>
+                <ul>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <!-- Add more categories as needed -->
+                </ul>
+                </li>
+                <li><a href="Contacts.html">Contact Us</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+       <!-- Separate content for each page -->
+       
+        
+
+<!-- Container for the image gallery -->
+<div class="container">
+<center>
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="C.jpg" style="width:20%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="H.jpg" style="width:20%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="L.jpg" style="width:20%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="CH.jpg" style="width:20%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"> 5 / 6</div>
+      <img src="LO.jpg" style="width:20%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="EE.jpg" style="width:20%">
+  </div>
+</center>   
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="C.jpg" style="width:100%" onclick="currentSlide(1)" alt="Wolf Black">
+    </div>      
+    <div class="column">
+      <img class="demo cursor" src="O.jpg" style="width:100%" onclick="currentSlide(2)" alt="Astro White">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="E.jpg" style="width:100%" onclick="currentSlide(3)" alt="Astro White">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="CH.jpg" style="width:100%" onclick="currentSlide(4)" alt="Hex Black">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="LO.jpg" style="width:100%" onclick="currentSlide(5)" alt="Crescent Black">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="EE.jpg" style="width:100%" onclick="currentSlide(6)" alt="City Khaki">
+    </div>
+  </div>
+</div>
+        
+        
+
+       
+    </section>
+    <p style="font-size:50px">For further questions, kindly click the word "contacts" below.</p>
+    <nav>
+            <ul>
+        <li><a style="font-size:50px" href="Contacts.html">Contacts</a></li>
+        </nav>
+            </ul>
+    <footer>
+        <!-- Add your footer content here -->
+        <p>&copy; 2024 Cozy Den. All rights reserved.</p>
+    </footer>
+</body>
+</html>

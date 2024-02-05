@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyDen Store</title>
+    <!-- Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+<style type="text/css">
+    body {
+    font-family: 'Arial', sans-serif;
+    font-color: dimgray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('Newly.jpg');
+
+}
+
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.responsive {
+  width: 300%;
+  max-width: 400px;
+  height: auto;
+  position: justify;
+}
+
+nav {
+      background-color: #555;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1em;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      position: relative;
+
+        }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #555;
+    }
+
+    nav li:hover > ul {
+      display: inherit;
+    }
+
+    nav ul ul li {
+      width: 100%;
+      text-align: center;
+    }
+p {
+  font-size: 16px;
+  color: floralwhite;
+  font-family: cursive;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    height:10%;
+    bottom: 100;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <header>
+        <!-- Add your navigation menu here -->
+        <nav>
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                <a>Products/Services</a>
+                <ul>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <!-- Add more categories as needed -->
+                </ul>
+                </li>
+                <li><a href="Contacts.html">Contact Us</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <!-- Separate content for each page -->
+        <li><a href="Gallery.html"><img src="ZY.jpg" width=35% height=35% alt="Nature" class="responsive"></a></li>
+        <center>
+        <p style="font-size:50px; color: gray;">CozyDen has one of the most comfy, and relaxing clothes of all time, ita has many different styles, and different designs.  You can view it at the Product and services section and the Gallery section.</p>
+        
+
+        
+        <img src="1.jpg" width=35% height=35% usemap="#image_map">
+<map name="image_map">
+  <area alt="about us" title="about us" href="aboutus.html" coords="230,64,534,384" shape="rect">
+  <area alt="Products" title="Products" href="products.html" coords="247,442,542,737" shape="rect">
+  <area alt="Gallery" title="Gallery" href="Gallery.html" coords="563,12,1162,797" shape="rect">
+</map>
+
+
+        <p style="font-size:50px; color: gray;">If you are interested please visit our social medias. <br><a style="font-size:50px; color: gray;" href="https://www.facebook.com/Cozy.DenMMXXIII " target="_blank">CozyDen Facebook</a><br>
+        <a style="font-size:50px; color: gray;" href="https://shopee.ph/cozy.den" target="_blank">CozyDen Shopee</a><br>
+        <a style="font-size:50px; color: gray;" href="https://www.lazada.com.ph/shop/cozy-den" target="_blank">CozyDen Lazada</a> </p>
+        <p style="font-size:50px; color: gray;">For further questions, kindly click the word "contacts" below.</p>
+        <nav>
+            <ul>
+        <li><a style="font-size:50px" href="Contacts.html">Contacts</a></li>
+        </nav>
+            </ul>
+</center>        
+    </section>
+
+    <footer>
+        
+        <p>&copy; 2024 Cozy Den. All rights reserved.</p>
+    </footer>
+</body>
+</html>

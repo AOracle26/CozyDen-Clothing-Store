@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<title></title>
+<style type="text/css"> 
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('Newly.jpg');
+
+}
+
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+}
+.responsive {
+  width: 300%;
+  max-width: 400px;
+  height: auto;
+  position: justify;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.responsive {
+  width: 300%;
+  max-width: 400px;
+  height: auto;
+  position: justify;
+}
+
+nav {
+      background-color: #555;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1em;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      position: relative;
+
+        }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #555;
+    }
+
+    nav li:hover > ul {
+      display: inherit;
+    }
+
+    nav ul ul li {
+      width: 100%;
+      text-align: center;
+    }
+p {
+    color: white;
+
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    height:5%;
+}</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-commerce Website</title>
+    <style>
+        /* Add your advanced CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        /* ... Additional styling for header, footer, and other sections ... */
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Add your navigation menu here -->
+        <nav>
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                <a>Products/Services</a>
+                <ul>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <!-- Add more categories as needed -->
+                </ul>
+                </li>
+                <li><a href="Contacts.html">Contact Us</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <!-- Separate content for each page -->
+        <li><a href="home.html"><img src="ZY.jpg" width=35% height=35% alt="Nature" class="responsive"></a></li>
+
+       
+
+        <!-- Products/Services Page -->
+        <div id="products" class="page">
+            <h1>Contacts</h1>
+            <p style="font-size:50px; color: gray;">If there are more questions, you can contact us at:
+            </p><br>
+            <p style="font-size:30px"><a style="color:ghostwhite;" href="https://www.facebook.com/Cozy.DenMMXXIII " target="_blank">CozyDen Facebook</a><br><br>
+            <a style="color:ghostwhite;" href="https://www.instagram.com/cozy.denmmxxiii?fbclid=IwAR0Qm0M2yITEEVSfytoG021hb6FztrXN3VeIY21ShRRhecF2i7ssDjjNvFk " target="_blank">CozyDen Instagram</a><br><br><a style="color:ghostwhite;" href="https://www.tiktok.com/@cozy.denmmxxiiitiktok?fbclid=IwAR0yGq_jA1AdETm8-JzTg37FO-di6CLB6fbP9Z1sZ-OP6eNqF-A6zeqnKTw" target="_blank">CozyDen Tiktok</a></p>
+           
+            <!-- Add more content as needed -->
+        </div>
+
+
+    <footer>
+        <!-- Add your footer content here -->
+        <p>&copy; 2024 Cozy Den. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - COZYDEN Store</title>
+    <style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('Newly.jpg');
+}
+
+img {
+  border: 10px solid #555;
+
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+p  {
+  font-size: 16px;
+  color: darkkhaki  ;
+}
+h2  {
+  font-size: 30px;
+  color: floralwhite;
+}
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+label  {
+  font-size: 16px;
+  color: darkkhaki;
+}
+input  {
+  font-size: 16px;
+  color: darkkhaki;hite;
+}
+.responsive {
+  width: 300%;
+  max-width: 400px;
+  height: auto;
+  position: justify;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+   height:5%;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COZYDEN Store</h1>
+        <!-- Add navigation links, etc. -->
+    </header>
+
+    <section id="checkout">
+        <li><a href="home.html"><img src="ZY.jpg" alt="Nature" class="responsive"></a></li>
+
+        <center>
+        <h2>Checkout</h2>
+        <form action="process_order.php" method="post">
+            <!-- Customer information -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+<label for="number">Number:</label>
+            <input type="number" id="number" name="number" required><br><br>
+
+            <!-- Shipping address -->
+            <h3 style="font-size:30px; color: gray;">Shipping Address</h3>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" required><br><br>
+
+            <!-- Shipping address -->
+            <h3 style="font-size:30px; color: gray;">Other</h3>
+            <label for="Message">Message to seller:</label>
+            <input type="text" id="Message" name="Message" required><br><br>
+
+            <label for="Variation">Variation Chosen:</label>
+            <input type="text" id="Variation" name="Variation" required><br><br>
+
+
+            <li><button type="submit"><a href="Thank you.html">Place Order</a></button></li>
+        </form>
+
+        </center>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cozy Den. All rights reserved.</p>
+    </footer>
+</body>
+</html>

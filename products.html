@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<title></title>
+<style type="text/css"> 
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+   padding-top: 56px;
+    box-sizing: border-box;
+    background-image: url('Newly.jpg');
+}
+.responsive {
+  width: 300%;
+  max-width: 400px;
+  height: auto;
+  position: justify;
+}
+    .navbar {
+            background-color: #0f0a00;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px;
+            text-align: center;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+      background-color: #555;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1em;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      position: relative;
+
+        }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #555;
+    }
+
+    nav li:hover > ul {
+      display: inherit;
+    }
+
+    nav ul ul li {
+      width: 100%;
+      text-align: center;
+    }
+p  {
+  font-size: 20px;
+  color: floralwhite
+}
+h2  {
+  font-size: 20px;
+  color: floralwhite
+}
+h1  {
+  font-size: 20px;
+  color: floralwhite
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    height:3%;
+    width: 100%;
+}</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-commerce Website</title>
+    <style>
+        /* Add your advanced CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        /* ... Additional styling for header, footer, and other sections ... */
+    </style>
+</head>
+<body>
+    
+        <!-- Add your navigation menu here -->
+        <nav>
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                <a>Products/Services</a>
+                <ul>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <!-- Add more categories as needed -->
+                </ul>
+                </li>
+                <li><a href="Contacts.html">Contact Us</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <!-- Separate content for each page -->
+       <li><a href="home.html"><img src="ZY.jpg" width=35% height=35% alt="Nature" class="responsive"></a></li>
+
+        <!-- Products/Services Page -->
+    <section class="container mt-5">
+     <div class="row">
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="den.jpg" width=25% height=25% alt="Product 1">
+                    <img src="Cozy.jpg" width=25% height=25% alt="Product 1">
+                   <h2 style="font-size:50px; color: gray;">Hex Black</h2>
+                    <p style="color:Green">₱550.00</p>
+                    <button style="color:Gray" class="btn btn-primary"><a href="TRY.html">Checkout</a></button>
+                </div>   
+            </div>
+
+        </div>
+            <div class="row">
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="Lion.jpg" width=25% height=25% alt="Product 1">
+                    <img src="BF.jpg" width=25% height=25% alt="Product 1">
+                    <img src="CDR.jpg" width=25% height=25% alt="Product 1">
+                   <h2 style="font-size:50px; color: gray;">Daniel</h2>
+                    <p style="color:Green">₱550.00</p>
+                    <button style="color:Gray" class="btn btn-primary"><a href="TRY.html">Checkout</a></button>
+                </div>   
+            </div>
+
+        </div>
+         <div class="row">
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="4.jpg" width=25% height=25% alt="Product 1">
+                    <img src="2.jpg" width=25% height=25% alt="Product 1">
+                    <img src="3.jpg" width=25% height=25% alt="Product 1">
+                   <h2 style="font-size:50px; color: gray;">Astro Black</h2>
+                    <p style="color:Green">₱550.00</p>
+                    <button style="color:Gray" class="btn btn-primary"><a href="TRY.html">Checkout</a></button>
+                </div>   
+            </div>
+
+        </div>
+         <div class="row">
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="CBC2.jpg" width=25% height=25% alt="Product 1">
+                    <img src="CBCF.jpg" width=25% height=25% alt="Product 1">
+                    <img src="CBC.jpg" width=25% height=25% alt="Product 1">
+                   <h2 style="font-size:50px; color: gray;">Crescent Black</h2>
+                    <p style="color:Green">₱550.00</p>
+                    <button style="color:Gray" class="btn btn-primary"><a href="TRY.html">Checkout</a></button>
+                </div>   
+            </div>
+
+        </div>
+
+
+       
+    </section>
+    <nav>
+            <ul>
+        <li><a style="font-size:50px; color: gray;" href="Contacts.html">Contacts</a></li>
+        </nav>
+            </ul>
+
+    <footer>
+        <!-- Add your footer content here -->
+        <p>&copy; 2024 Cozy Den. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</body>
+</html>
